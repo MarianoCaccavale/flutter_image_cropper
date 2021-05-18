@@ -34,6 +34,6 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.MarianoCaccavale:ucrop:9aba89b'
+        implementation 'com.github.MarianoCaccavale:ucrop:with_angle_correct'
     }
 }
