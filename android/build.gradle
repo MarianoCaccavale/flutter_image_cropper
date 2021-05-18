@@ -34,6 +34,6 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.nemodcoc:ucrop:2.2.6'
+        implementation 'com.github.nemodcoc:ucrop:main_angle'
     }
 }
