@@ -34,6 +34,6 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.MarianoCaccavale:main_angle-SNAPSHOT'
+        implementation 'com.github.nemodcoc:main_angle-SNAPSHOT'
     }
 }
