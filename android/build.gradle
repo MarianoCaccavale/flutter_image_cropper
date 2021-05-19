@@ -34,6 +34,6 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.MarianoCaccavale:uCrop:Tag'
+        implementation 'com.github.MarianoCaccavale:uCrop:main_angle-d2de4d5468-1'
     }
 }
