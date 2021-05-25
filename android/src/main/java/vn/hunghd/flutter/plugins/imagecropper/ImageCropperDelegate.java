@@ -81,6 +81,8 @@ public class ImageCropperDelegate implements PluginRegistry.ActivityResultListen
         }
 
         UCrop cropper = UCrop.of(sourceUri, destinationUri).withOptions(options);
+	    Log.i("Prova getOutputImageAngle2 Mariano.py(startCrop)", cropper.getOutputImageAngle2);
+	    Log.i("Prova getOutputImageAngle Mariano.py(startCrop)", cropper.getOutputImageAngle);
         if (maxWidth != null && maxHeight != null) {
             cropper.withMaxResultSize(maxWidth, maxHeight);
         }
@@ -102,8 +104,8 @@ public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
             final int width = UCrop.getOutputImageWidth(data);
 
             final int height = UCrop.getOutputImageHeight(data);
-		
-	final double angle2=   UCrop.getOutputImageAngle2(data);
+		final float angle= UCrop.getOutputImageAngle2(data);
+		Log.i("Prova Stampa ImageCropperDelegate.java - Mariano.py", angle);
 
    
 
