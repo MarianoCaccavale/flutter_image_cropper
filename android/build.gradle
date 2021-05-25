@@ -34,6 +34,6 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.MarianoCaccavale:uCrop:263d7c3fb4'
+        implementation 'com.github.MarianoCaccavale:uCrop:1ed6b25b19'
     }
 }
