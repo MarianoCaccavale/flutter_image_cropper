@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.net.Uri;
+import android.util.Log;
 
 import com.yalantis.ucrop.UCrop;
 import com.yalantis.ucrop.model.AspectRatio;
@@ -81,6 +82,8 @@ public class ImageCropperDelegate implements PluginRegistry.ActivityResultListen
         }
 
         UCrop cropper = UCrop.of(sourceUri, destinationUri).withOptions(options);
+	    Log.i("Prova getOutputImageAngle2 Mariano.py(startCrop)", cropper.getOutputImageAngle2);
+	    Log.i("Prova getOutputImageAngle Mariano.py(startCrop)", cropper.getOutputImageAngle);
         if (maxWidth != null && maxHeight != null) {
             cropper.withMaxResultSize(maxWidth, maxHeight);
         }
@@ -100,11 +103,11 @@ public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
             final int x = data.getIntExtra(UCrop.EXTRA_OUTPUT_OFFSET_X, -1);
             final int y = data.getIntExtra(UCrop.EXTRA_OUTPUT_OFFSET_Y, -1);
             final int width = UCrop.getOutputImageWidth(data);
-
             final int height = UCrop.getOutputImageHeight(data);
 
-            final float angle=0;
-            //final float angle=   UCrop.getOutputImageAngle(data);
+            //final float angle=0;
+            final float angle= UCrop.getOutputImageAngle2(data);
+		Log.i("Prova Stampa ImageCropperDelegate.java - Mariano.py", angle);
    
             finishWithSuccess(String.format(
 					"%s|\\|%d|\\|%d|\\|%d|\\|%d|\\|%f",
