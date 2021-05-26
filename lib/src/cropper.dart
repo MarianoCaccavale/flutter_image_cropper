@@ -106,19 +106,19 @@ class ImageCropper {
 
     return CropInfo(
       path: splitResult[0],
-      x: double.parse(splitResult[1]),
-      y: double.parse(splitResult[2]),
-      width: double.parse(splitResult[3]),
-      height: double.parse(splitResult[4]),
-      angle: double.parse(splitResult[5]),
+      x: int.parse(splitResult[1]),
+      y: int.parse(splitResult[2]),
+      width: int.parse(splitResult[3]),
+      height: int.parse(splitResult[4]),
+      angle: int.parse(splitResult[5]),
     );
   }
 }
 
 class CropInfo {
   final String path;
-  final double x, y, width, height;
-  final double angle;
+  final int x, y, width, height;
+  final int angle;
   
   get minX => x;
   get minY => y;
