@@ -124,8 +124,6 @@ class CropInfo {
 
   get maxX => x + width;
   get maxY => y + height;
-  
-  get angle => angle;
 
   CropInfo(
       {required this.path,
