@@ -106,7 +106,7 @@ class ImageCropper {
     print('Mariano.py - resultPath: ' + resultPath);
     
     print('Mariano.py - width: ' + splitResult[3]);
-    print('Mariano.py - cropper.dart angle: ' + splitResult[5]);
+    print('Mariano.py - cropper.dart angle: ' + int.parse(splitResult[5]));
 
     return CropInfo(
       path: splitResult[0],
