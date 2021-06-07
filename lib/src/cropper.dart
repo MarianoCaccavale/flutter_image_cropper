@@ -107,6 +107,7 @@ class ImageCropper {
     
     print('Mariano.py - width: ' + splitResult[3]);
     double tmpAngle = double.parse(splitResult[5]);
+    int tmpAngleCorr = tmpAngle.toInt();
     print('Mariano.py - cropper.dart tmpAngle: ' + (tmpAngle).toString());
     print('Mariano.py - cropper.dart tmpAngleInt: ' + (tmpAngle.toInt()).toString());
     
@@ -117,7 +118,7 @@ class ImageCropper {
       y: int.parse(splitResult[2]),
       width: int.parse(splitResult[3]),
       height: int.parse(splitResult[4]),
-      angle: int.parse(splitResult[5]),
+      angle: tmpAngleCorr,
     );
   }
 }
