@@ -103,13 +103,8 @@ class ImageCropper {
 
     var splitResult = resultPath.split("|\\|");
     
-    print('Mariano.py - resultPath: ' + resultPath);
-    
-    print('Mariano.py - width: ' + splitResult[3]);
     double tmpAngle = double.parse(splitResult[5]);
     int tmpAngleCorr = tmpAngle.toInt();
-    print('Mariano.py - cropper.dart tmpAngle: ' + (tmpAngle).toString());
-    print('Mariano.py - cropper.dart tmpAngleInt: ' + (tmpAngle.toInt()).toString());
     
 
     return CropInfo(
